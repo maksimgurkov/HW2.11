@@ -20,11 +20,12 @@ class TabBarViewController: UITabBarController {
     private func passingViewController() {
         let persons = Person.dataPersons()
         
-        let personsListVC = viewControllers?.first as! PersonsListTableViewController
-        let generalListVC = viewControllers?.last as! GeneralListTableViewController
+        guard let personsListVC = viewControllers?.first as? PersonsListTableViewController else { return }
+        guard let generalListVC = viewControllers?.last as? GeneralListTableViewController else { return }
         
         personsListVC.persons = persons
         generalListVC.persons = persons
+        
     }
     
 
