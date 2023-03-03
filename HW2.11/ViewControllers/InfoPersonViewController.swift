@@ -9,11 +9,14 @@ import UIKit
 
 class InfoPersonViewController: UIViewController {
     
+    // MARK: - Public properties
     var person: Person!
     
+    // MARK: - IBOutlets
     @IBOutlet weak var phonePersonLabel: UILabel!
     @IBOutlet weak var emailPersonLabel: UILabel!
     
+    // MARK: - Override functions
     override func viewDidLoad() {
         super.viewDidLoad()
         

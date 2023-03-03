@@ -15,7 +15,7 @@ struct Person {
         "\(name) \(surname)"
     }
         
-    static func dataPersone() -> [Person] {
+    static func dataPersons() -> [Person] {
 
         var persons: [Person] = []
 

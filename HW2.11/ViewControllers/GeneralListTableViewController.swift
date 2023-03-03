@@ -9,6 +9,7 @@ import UIKit
 
 class GeneralListTableViewController: UITableViewController {
     
+    // MARK: - Public properties
     var persons: [Person] = []
     
     // MARK: - Table view data source

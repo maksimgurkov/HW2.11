@@ -9,8 +9,10 @@ import UIKit
 
 class PersonsListTableViewController: UITableViewController {
     
+    // MARK: - Public properties
     var persons: [Person] = []
     
+    // MARK: - Override functions
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Persons List"
@@ -41,8 +43,6 @@ class PersonsListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
-    
     
 }
  
